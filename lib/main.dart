@@ -50,7 +50,7 @@ class _BuboHomePageState extends State<BuboHomePage> {
             constraints: const BoxConstraints.expand(),
             decoration: const BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage('assets/main_background.png'),
+                    image: AssetImage('assets/background.png'),
                     fit: BoxFit.cover)),
             child: null,
           ),
@@ -75,8 +75,8 @@ class _BuboHomePageState extends State<BuboHomePage> {
           Positioned(
             bottom: 30,
             left: 30,
-            width: 200,
-            child: Image.asset('assets/bubo_logo.png'),
+            width: 260,
+            child: Image.asset('assets/l_logo.png'),
           ),
         ],
       ),
@@ -92,7 +92,7 @@ class _BuboHomePageState extends State<BuboHomePage> {
 ///
 class BuboCategoryViewer extends StatelessWidget {
   final String language;
-  BuboCategoryViewer(this.language, {super.key});
+  const BuboCategoryViewer(this.language, {super.key});
 
   @override
   Widget build(BuildContext context) {

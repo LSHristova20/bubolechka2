@@ -51,8 +51,8 @@ var columnOfContainers = Column(
   children: [...listOfColorContainers, button],
 );
 
-var row = Row(children: listOfTextElements, textDirection: TextDirection.ltr);
+var row = Row(textDirection: TextDirection.ltr, children: listOfTextElements);
 
 var button = CupertinoButton.filled(
-    child: Text('press me', textDirection: TextDirection.ltr),
+    child: const Text('press me', textDirection: TextDirection.ltr),
     onPressed: () => print('button pressed!'));
