@@ -92,7 +92,7 @@ class _BuboHomePageState extends State<BuboHomePage> {
 ///
 class BuboCategoryViewer extends StatelessWidget {
   final String language;
-  BuboCategoryViewer(this.language, {super.key});
+  const BuboCategoryViewer(this.language, {super.key});
 
   @override
   Widget build(BuildContext context) {
