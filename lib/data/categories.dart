@@ -6,23 +6,23 @@ import '../models/bubo_category.dart';
 
 /// Original labels in german and bulgarian, english added as last value
 const labels = [
-  ["1", "Obst", "тигър", "Tiger", "ES"],
-  ["2", "Farben", "цветове", "colors"],
-  ["3", "Moebel", "мебели", "furniture"],
-  ["4", "Sachen", "дрехи", "clothes"],
-  ["5", "Spielzeug", "играчки", "toys"],
-  ["6", "Tiere", "животни", "animals"],
-  ["7", "Wilde Tiere", "диви животни", "wild animals"],
-  ["8", "Zahlen", "цифри", "digits"],
-  ["9", "Wetter", "времето", "weather"],
-  ["10", "Zu Hause", "вкъщи", "at home"],
-  ["11", "Natur", "природа", "nature"],
-  ["12", "Im Meer", "морето", "sea"],
-  ["13", "Am Strand", "на плажа", "on the beach"],
-  ["14", "Sport", "спорт", "sport"],
-  ["15", "Stadt", "град", "city"],
-  ["16", "Berufe", "професии", "professions"],
-  ["17", "Fahrzeuge", "транспрорт", "transport"]
+  ["1", "Schlange", "змия", "snake", "ES"],
+  ["2", "Tiger", "тигър", "tiger"],
+  ["3", "Elefant", "слон", "elephant"],
+  ["4", "Schildkröte", "костенурка", "turtle"],
+  ["5", "Delfin", "делфин", "dolphin"],
+  ["6", "Krabbe", "рак", "crab"],
+  ["7", "Seepferdchen", "морско конче", "seahorse"],
+  ["8", "Clownfisch", "риба Клоун", "clown fish"],
+  ["9", "Adler", "орел", "eagle"],
+  ["10", "Eule", "бухал", "owl"],
+  ["11", "Schmetterling", "пеперуда", "butterfly"],
+  ["12", "Libelle", "водно конче", "dragonfly"],
+  ["13", "Newt", "тритон", "newt"],
+  ["14", "Salamander", "саламандър", "salamander"],
+  ["15", "Stadt", "гущер", "lizard"],
+  ["16", "Chamäleon", "хамелеон", "chameleon"],
+  ["17", "Frosch", "жаба", "frog"]
 ];
 
 ///
