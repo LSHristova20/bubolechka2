@@ -1,4 +1,4 @@
-<h1 align="center">Lorena-Bubole4ka project/h1>
+<h1 align="center">Lorena-Bubolechka2 project
 <p align="center">
 <img src="assets/l_logo.png" width="450px">
 </p>
