@@ -1,3 +1,5 @@
+import 'package:bubolechka2/data/cards.dart';
+
 import '../models/bubo_category.dart';
 
 ///
@@ -38,5 +40,10 @@ List<BuboCategory> buboCategories = labels.map((categoryLabels) {
         'us': categoryLabels[3],
         'de': categoryLabels[1],
         'bg': categoryLabels[2]
-      });
+      },
+      cards
+          .where(
+            (card) => card.categoryId == int.parse(categoryLabels[0]),
+          )
+          .toList());
 }).toList();

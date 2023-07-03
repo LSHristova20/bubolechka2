@@ -3,6 +3,8 @@ import 'package:bubolechka2/language_selector.dart';
 import 'package:bubolechka2/models/bubo_category.dart';
 import 'package:flutter/material.dart';
 
+import 'bubo_card_viewer.dart';
+
 void main() {
   runApp(const BuboApp());
 }
@@ -14,7 +16,7 @@ class BuboApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Lorenaehr',
+      title: 'lorenaehr',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -75,7 +77,7 @@ class _BuboHomePageState extends State<BuboHomePage> {
           Positioned(
             bottom: 30,
             left: 30,
-            width: 260,
+            width: 200,
             child: Image.asset('assets/l_logo.png'),
           ),
         ],
@@ -92,7 +94,7 @@ class _BuboHomePageState extends State<BuboHomePage> {
 ///
 class BuboCategoryViewer extends StatelessWidget {
   final String language;
-  const BuboCategoryViewer(this.language, {super.key});
+  BuboCategoryViewer(this.language, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -178,24 +180,38 @@ class BuboCategoryListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
-      Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image.asset(category.image, width: 250, fit: BoxFit.fill),
-          Text(
-              category.translatedLabels[language]!,
-              style: const TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 30,
-                  color: Colors.white),
-            ),
-        ],
-      ),
-      Container(
-        height: 10,
-      )
-    ]);
+    return GestureDetector(
+      onTap: () => {
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => BuboCardViewer(category.cards),
+          ),
+        )
+      },
+      child: Column(children: [
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(category.image, width: 250, fit: BoxFit.fill),
+            RotatedBox(
+              quarterTurns: 1,
+              child: Text(
+                category.translatedLabels[language]!,
+                style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30,
+                    color: Colors.white),
+              ),
+            )
+          ],
+        ),
+        Container(
+          height: 10,
+        )
+        //_viewWithContainer(),
+        //_viewWithStack(),
+      ]),
+    );
   }
 
   Widget _viewWithStack() {
