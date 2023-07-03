@@ -14,7 +14,7 @@ class BuboApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bubolechka 2',
+      title: 'Lorenaehr',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -109,7 +109,7 @@ class BuboCategoryViewer extends StatelessWidget {
       return GridView.count(
         mainAxisSpacing: 10,
         crossAxisSpacing: 0,
-        crossAxisCount: itemsPerRow,
+        crossAxisCount: 4,
         children: buboCategories.map((buboCategory) {
           return BuboCategoryListItem(language, buboCategory);
         }).toList(),
