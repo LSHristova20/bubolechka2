@@ -29,10 +29,8 @@ Lorena Hristova
       
  ## 📄 Documents
       
-- [Word Documentation](https://codingburgas-my.sharepoint.com/:w:/g/personal/sysolakov20_codingburgas_bg/EbVJJMJHvAFLl7hX-e8m6IMBDULhAsUT_3YhBrngkOruqQ?e=H3CfLV)
-- [PowerPoint Presentation](https://codingburgas-my.sharepoint.com/:p:/g/personal/sysolakov20_codingburgas_bg/EXv395rgGdpHqVZFLU5n2vEB0z7IRLcUZEfh0oayBEjgaQ?e=SzXvfj)
-- [Design Documentation](https://codingburgas-my.sharepoint.com/:b:/g/personal/sysolakov20_codingburgas_bg/EVNvugMhCoxIr35jKeKSuxcBf0iWpWsszUG491FtHGVVSQ?e=waZLoe)
-      
+- [Word Documentation](https://github.com/LSHristova20/bubolechka2/blob/main/documentation-lorena.docx)
+   
 ## 🎬 Demo of the project 
 
 <p align="center">
